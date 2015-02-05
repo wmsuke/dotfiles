@@ -1,3 +1,29 @@
+" -- neobundleの設定 -- "
+set nocompatible
+filetype plugin indent off
+
+if has('vim_starting')
+   if &compatible
+     set nocompatible               " Be iMproved
+   endif
+   set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+
+call neobundle#begin(expand('~/app/dotfiles/vim/bundle/'))
+
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" Bundles:
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'The-NERD-tree'
+NeoBundle 'The-NERD-Commenter'
+
+call neobundle#end()
+
+filetype plugin indent on
+
+NeoBundleCheck
+
 " -- 基本的な設定-- "
 
 " 文字コードの指定
