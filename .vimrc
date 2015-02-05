@@ -15,11 +15,10 @@ set noautoindent
 " 検索時にファイルの最後まで行ったら最初に戻る (nowrapscan:戻らない) 
 set wrapscan
 
-"バックアップファイルのディレクトリを指定する
-set backupdir=$HOME/.vim/vimbackup
-
-"スワップファイル用のディレクトリを指定する
-set directory=$HOME/.vim/vimbackup
+" スワップファイルは使わない
+set noswapfile
+" バックアップファイルのディレクトリを指定する
+set backupdir=$HOME/.vimbackup
 
 "タブの代わりに空白文字を指定する
 set expandtab
