@@ -80,6 +80,8 @@ set wrapscan
 set noswapfile
 " バックアップファイルのディレクトリを指定する
 set backupdir=$HOME/.vimbackup
+" undofileのバックアップディレクトリを指定する
+set undodir=$HOME/.vimbackup
 
 "タブの代わりに空白文字を指定する
 set expandtab
