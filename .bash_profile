@@ -8,6 +8,6 @@ alias mvim='/Applications/MacVim.app/Contents/MacOS/mvim --remote-tab-silent'
 export SVN_EDITOR="vim --noplugin"
 
 # golang
-export GOPATH=$HOME/lib/go:$HOME/app/go
+export GOPATH=$HOME/lib/go:$HOME/app/go:$HOME/app/toDo
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
