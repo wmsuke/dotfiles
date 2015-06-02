@@ -73,8 +73,6 @@ set cursorline
 set number
 " 自動インデントはしない
 set noautoindent
-" 検索時にファイルの最後まで行ったら最初に戻る (nowrapscan:戻らない) 
-set wrapscan
 
 " スワップファイルは使わない
 set noswapfile
@@ -86,18 +84,37 @@ set undodir=$HOME/.vimbackup
 "タブの代わりに空白文字を指定する
 set expandtab
 
-"インクリメンタルサーチを行う
-set incsearch
-
 "閉括弧が入力された時、対応する括弧を強調する
 set showmatch
+
+" 検索結果のハイライトをEsc連打でクリアする
+nnoremap <ESC><ESC> :nohlsearch<CR>
+
+" 途中改行をなくす
+set textwidth=0
+
+"内容が変更されたら自動的に再読み込み
+set autoread
+
+"カッコを閉じたとき対応するカッコに一時的に移動
+set nostartofline
+
+"-------Search--------
+""インクリメンタルサーチを有効にする
+set incsearch
+
+"大文字小文字を区別しない
+"set ignorecase
+"
+""大文字で検索されたら対象を大文字限定にする
+set smartcase
+
+"行末まで検索したら行頭に戻る
+"set wrapscan
 
 " grep検索を設定する
 set grepformat=%f:%l:%m,%f:%l%m,%f\ \ %l%m,%f
 set grepprg=grep\ -nh
-
-" 検索結果のハイライトをEsc連打でクリアする
-nnoremap <ESC><ESC> :nohlsearch<CR>
 
 "
 " golang
