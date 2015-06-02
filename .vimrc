@@ -91,7 +91,7 @@ set showmatch
 nnoremap <ESC><ESC> :nohlsearch<CR>
 
 " 途中改行をなくす
-set textwidth=0
+autocmd FileType text setlocal textwidth=0
 
 "内容が変更されたら自動的に再読み込み
 set autoread
