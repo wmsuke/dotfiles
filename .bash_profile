@@ -4,6 +4,9 @@ alias ls='gls -F --color=auto'
 alias vi='vim'
 alias mvim='/Applications/MacVim.app/Contents/MacOS/mvim --remote-tab-silent'
 
+# cron
+export EDITOR=/usr/bin/vim
+
 # SVN
 export SVN_EDITOR="vim --noplugin"
 
