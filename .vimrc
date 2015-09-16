@@ -130,3 +130,12 @@ set rtp^=${GOPATH}/src/github.com/nsf/gocode/vim
 au BufWritePre *.go Fmt
 au BufNewFile,BufRead *.go set sw=4 noexpandtab ts=4
 au FileType go compiler go
+
+"
+" メモ用
+"
+" TODOファイル
+command! Todo edit ~/Dropbox/memo_vim/todo.txt
+" 一時ファイル
+command! -nargs=1 -complete=filetype Tmp edit ~/.vim_tmp/tmp.<args>
+command! -nargs=1 -complete=filetype Temp edit ~/.vim_tmp/tmp.<args>
