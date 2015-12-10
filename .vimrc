@@ -17,6 +17,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'The-NERD-tree'
 NeoBundle 'The-NERD-Commenter'
+NeoBundle 'tomasr/molokai'
 
 call neobundle#end()
 

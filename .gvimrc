@@ -10,4 +10,7 @@ set columns=100
 set lines=48
 
 "カラースキーマ
-colorscheme desert
+" colorscheme desert
+set background=dark
+" colorscheme hybrid
+colorscheme molokai

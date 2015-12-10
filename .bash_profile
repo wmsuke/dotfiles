@@ -14,3 +14,5 @@ export SVN_EDITOR="vim --noplugin"
 export GOPATH=$HOME/lib/go:$HOME/app/go:$HOME/app/toDo
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+[[ -s "/Users/matsui/.gvm/scripts/gvm" ]] && source "/Users/matsui/.gvm/scripts/gvm"
