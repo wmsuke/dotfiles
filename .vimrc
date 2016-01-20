@@ -105,17 +105,20 @@ set nostartofline
 set incsearch
 
 "大文字小文字を区別しない
-"set ignorecase
-"
+set ignorecase
+
 ""大文字で検索されたら対象を大文字限定にする
 set smartcase
 
 "行末まで検索したら行頭に戻る
-"set wrapscan
+set wrapscan
 
 " grep検索を設定する
 set grepformat=%f:%l:%m,%f:%l%m,%f\ \ %l%m,%f
 set grepprg=grep\ -nh
+
+" 新規タブのショートカット
+ca tn tabnew
 
 "
 " golang
