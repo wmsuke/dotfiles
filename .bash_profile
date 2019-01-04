@@ -22,9 +22,9 @@ fi
 export SVN_EDITOR="vim --noplugin"
 
 # golang
-#export GOROOT=/usr/local/go
-#export GOPATH=$GOROOT:/Users/matsui/app/GoglandProjects
-#export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+export GOROOT=/usr/local/go
+export GOPATH=$GOROOT:/Users/matsui/app
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 export PKG_CONFIG_PATH=/usr/lib/pkgconfig
 
 [[ -s "/Users/matsui/.gvm/scripts/gvm" ]] && source "/Users/matsui/.gvm/scripts/gvm"
